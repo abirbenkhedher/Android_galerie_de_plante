@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "601895456642",
+    "firebase_url": "https://flowers-174a7-default-rtdb.firebaseio.com",
+    "project_id": "flowers-174a7",
+    "storage_bucket": "flowers-174a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601895456642:android:65be08eac659760ee0099b",
+        "android_client_info": {
+          "package_name": "iset.dsi.flowersCollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601895456642-ivb7s8j737ao73d1p435cekbr6uuvor4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtzi1QToo3oaJnmfzNfquEkiKCHF1vPwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601895456642-ivb7s8j737ao73d1p435cekbr6uuvor4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601895456642:android:9067df0c7582efe7e0099b",
+        "android_client_info": {
+          "package_name": "iset.dsi.natureetmoi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601895456642-ivb7s8j737ao73d1p435cekbr6uuvor4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtzi1QToo3oaJnmfzNfquEkiKCHF1vPwU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601895456642-ivb7s8j737ao73d1p435cekbr6uuvor4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="iset.dsi.natureetmoi.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_collection"
+        android:name="iset.dsi.natureetmoi.ui.collection.CollectionFragment"
+        android:label="@string/collection"
+        tools:layout="@layout/fragment_collection"/>
+
+    <fragment
+        android:id="@+id/navigation_ajouter"
+        android:name="iset.dsi.natureetmoi.ui.ajouter.AjouterFragment"
+        android:label="@string/ajouter"
+        tools:layout="@layout/fragment_ajouter" >
+    <argument
+        android:name="nom"
+        app:argType="string"
+        android:defaultValue="" />
+        <argument
+            android:name="desc"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="crois"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="cons"
+            app:argType="string"
+            android:defaultValue="" />
+        <argument
+            android:name="uri"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/navigation_maps"
+        android:name="iset.dsi.natureetmoi.ui.maps.MapsFragment"
+        android:label="Map"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

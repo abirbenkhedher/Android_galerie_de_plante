@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    android:layout_marginBottom="50dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/up">
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/horizontal_flower">
+            <ImageView
+                android:id="@+id/flower_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                android:src="@color/black">
+            </ImageView>
+            <ImageView
+                android:id="@+id/fav"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_unstar">
+            </ImageView>
+            <ImageView
+                android:id="@+id/view_photo"
+                android:layout_toRightOf="@+id/fav"
+                android:layout_marginLeft="40dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/samplephoto">
+            </ImageView>
+            <ImageView
+                android:id="@+id/del"
+                android:visibility="invisible"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="110dp"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/trashcan"></ImageView>
+            <ImageView
+                android:id="@+id/modif"
+                android:visibility="invisible"
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="110dp"
+                android:layout_toRightOf="@+id/del"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pen"></ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/nomlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/horizontal_flower"
+            android:text="Nom Du Plante:"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/nomItem"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/nomlabel"
+            android:layout_toEndOf="@+id/horizontal_flower"
+            android:text="nom"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/desclabel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_below="@+id/nomItem"
+            android:layout_toRightOf="@+id/horizontal_flower"
+            android:text="Description:"
+            android:textSize="20sp"></TextView>
+        <TextView
+            android:id="@+id/descItem"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/desclabel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/horizontal_flower"
+            android:text="desc"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/croilabel"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30dp"
+            android:layout_below="@+id/horizontal_flower"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Croissance:"
+            android:textSize="15sp"
+            android:visibility="invisible"></TextView>
+
+        <TextView
+            android:id="@+id/croiItem"
+            android:layout_width="wrap_content"
+
+            android:layout_height="30dp"
+            android:layout_below="@+id/croilabel"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:text="croissance"
+            android:textSize="15sp"
+            android:visibility="invisible"></TextView>
+        <TextView
+            android:id="@+id/conslabel"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/horizontal_flower"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/croiItem"
+            android:text="Consommation:"
+            android:textSize="15sp"></TextView>
+        <TextView
+            android:id="@+id/consItem"
+            android:visibility="invisible"
+
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/conslabel"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@+id/croiItem"
+            android:text=" cons"
+            android:textSize="15sp"></TextView>
+
+        <TextView
+            android:id="@+id/favItem"
+            android:visibility="invisible"
+            android:text=" cons"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp">
+        </TextView>
+        <TextView
+            android:id="@+id/urlItem"
+            android:visibility="invisible"
+            android:text=" cons"
+            android:textSize="15sp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_below="@+id/consItem"
+            android:background="#3DF344" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+   <LinearLayout
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:orientation="vertical"
+       tools:ignore="MissingConstraints">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/nomItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="nom"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+           <TextView
+               android:id="@+id/descItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="desc"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+           <TextView
+               android:id="@+id/consItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="cons"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+
+       </LinearLayout>
+
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:orientation="horizontal">
+           <TextView
+               android:id="@+id/croiItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="croi"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+           <TextView
+               android:id="@+id/favItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="fav"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+           <TextView
+               android:id="@+id/urlItem"
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"
+               android:text="url"
+               android:textColor="@color/black"
+               android:textSize="25sp"
+               android:textStyle="bold">
+           </TextView>
+
+       </LinearLayout>
+
+
+
+   </LinearLayout>
+
+-->
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
